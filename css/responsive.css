@@ -1,0 +1,205 @@
+
+
+@media screen and (min-width: 480px) {
+
+  /**************
+TWO COLUMN LAYOUT
+***************/
+
+  .col {
+    display: inline-block;
+    width: 95%;
+    vertical-align: top;
+    margin-right: -5px;
+    padding-left: .5em;
+    padding-right: .5em;
+    margin-top: 2em;
+  }
+
+  .primary {
+    width: 45%;
+    float: left;
+  }
+
+  .secondary {
+    width: 45%;
+    float: right;
+  }
+
+  .contact {
+    width: 30%;
+    float: right;
+  }
+
+  .clearfix {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+  nav li {
+  display: inline-block;
+  }
+
+
+
+/**************
+    Header
+***************/
+
+  .mainheader {
+    background-image: linear-gradient(dodgerblue, transparent 40%),
+      linear-gradient(0deg, #fff, transparent 50%),
+      url("../image/IMG_0545.jpg");
+    width: 100%;
+    }
+
+  /**************
+
+Navigation
+
+***************/
+
+  nav {
+    background: none;
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+
+  /**************
+PAGE: Portfolio
+***************/
+
+  .event_links li {
+    float: left;
+    /*height: 25px;*/
+    width: 25%;
+    margin: 2%;
+    margin-bottom: 2em;
+    padding:1px;
+  }
+
+  .event_links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    align-items: center;
+  }
+
+  .design-preview li {
+    float: left;
+    /*height: 25px;*/
+    width: 25%;
+    margin: 2%;
+    margin-bottom: 2em;
+    background-color: #f5f5f5;
+    color: #bdc3c7;
+    padding:1px;
+    border:1px solid grey;
+  }
+
+  .design-preview li a p {
+    margin: 0;
+    padding: 5%;
+    font-size: 0.75em;
+    color: #bdc3c7;
+  }
+
+  .design-preview {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+
+
+  /**************
+PAGE: Leisure
+***************/
+
+
+  #gallery {
+    flex-direction: row;
+  }
+
+  /**************
+PAGE: ABOUT
+***************/
+
+  .profile-photo {
+  float: left;
+  margin: 0 5% 20px 0;
+  }
+
+  .inset {
+    float: left;
+    margin: 0 5% 20px 0;
+  }
+
+}
+
+@media screen and (min-width: 660px) {
+
+        /**************
+HEADER
+***************/
+
+  /*.scrolling_header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding-top: 75px;
+    padding-right: 50px;
+    background-color: ???;
+  }*/
+
+
+
+
+  .logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 0.825em;
+    margin-bottom: 20px;
+  }
+
+  header {
+    border-bottom: whitesmoke;
+    margin-bottom: 60px;
+  }
+
+  /**************
+BODY
+***************/
+
+
+  /**************
+Footer
+***************/
+
+
+  .sticky_footer {
+    min-height: calc(100vh - 103px);
+  }
+
+}

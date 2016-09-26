@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kelly Crowther</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400italic,700,700italic,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <h1>Kelly Crowther</h1>
+        <h2>Personal Webpage</h2>
+      </a>
+      <nav class="scrolling_header">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="skiteam.html" class="selected">Ski Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <section>
+        <img class="inset" src="image/IMG_1100.jpg" alt="Skiers at Hoodoo">
+          <h3>Ski Team</h3>
+          <p>I am the coach of the Sisters High School Nordic Ski Team, and I am the Northern League representative for the Oregon Interscholastic Ski Racing Association. We are a small, fun team focused on developing beginning and intermediate skiers. Below you can find scheduling information for races and practices along with pictures of our practices.</p>
+          <div class="clearfix"></div>
+          <div class="primary col">
+            <h3>General Information</h3>
+              <ul>
+                <li><a href="documents/SHSNordic_General_Information.pdf">General Information Document</a></li>
+                <li><a href="documents/Strength Workout.pdf">Strength Workout</a></li>
+                <li><a href="Fitness Test 2016.pdf">Fitness Test</a></li>
+              </ul>
+            <h3>Schedules and Results</h3>
+              <ul>
+                <li><a href="http://www.oisra.org/Nordic">Race Schedule</a></li>
+                <li><a href="documents/Training Calendar 2015-16.pdf">Training Calendar 2016</a></li>
+                <li><a href="http://www.webscorer.com/8098">Race Results</a></li>
+              </ul>
+          </div>
+          <div class="secondary col">
+            <form action="../database/skiTeamData"  method="post">
+
+              <h3 class="form_title">Athlete and Parent Contact Form</h3>
+              <label for="text">Name:</label>
+              <input type="text" id="text" name="user_name" placeholder="First and Last Name"><br>
+
+              <label for="email">Email:</label>
+              <input type="email" id="mail" name="user_email" placeholder="example@example.com"><br>
+
+              <label for="tel">Phone:</label>
+              <input type="tel" id="tel" name="user_phone" placeholder="###-###-####"><br>
+
+              <button type="submit" class="submitButton">Submit</button>
+            </form>
+          </div>
+        <h3 class="clearfix">Donations</h3>
+          <p>The SHS Ski Team and the OHSNO are both non-profit entities that rely on donations to fund high school Nordic skiing in Oregon. Donations as small as $10 given to the SHS team can buy a tube of kickwax for the season and donations as large as $100 can buy a pair of skis that will be used for 5 or more seasons. Naming rights for races can be purchased through the OHSNO for as little as $350 for league races. This type of sponsorship benefits the racers in the league by reducing trail fees and providing revenue for purchasing timing equipment. If you are intersted in donating, please contact me and we can go over our options.</p>
+        <h3>Photo Gallery</h3>
+          <p>Check out the fun we have at practice!</p>
+      </section>
+      <footer>
+        <a href="https://www.facebook.com/kelly.crowther2"><img src="image/facebooklogoblack.jpg" alt="Facebook Logo" class="social-icon"></a>
+        <a href="https://www.instagram.com/crowtherkelly/"><img src="image/Instagram_logo_2016.jpg" alt="Instagram Logo" class="social-icon"></a>
+        <p> &copy; 2016 Kelly Crowther</p>
+      </footer>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="sw.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-75674820-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
